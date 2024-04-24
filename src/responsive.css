@@ -1,0 +1,55 @@
+@media (max-width: 1024px) {
+  .main {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho .logo img {
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url(./image/images/bg-mobile.svg) center center no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .img {
+    padding-bottom: 4rem;
+  }
+  .main .textos {
+    gap: 5rem;
+    align-items: center;
+  }
+  .main .textos .texto-principal {
+    text-align: center;
+  }
+
+  .main .textos .paragrafo {
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 4rem;
+  }
+  .main .textos .btn {
+    width: 25rem;
+    height: 6rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rodape {
+    justify-content: center;
+    padding: 5rem;
+    margin-top: 2rem;
+    min-width: 37.5rem;
+  }
+}

@@ -1,0 +1,112 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  background: url(./image/images/bg-desktop.svg) center center no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  max-width: 1920px;
+}
+
+.container {
+  display: grid;
+  grid:
+    "cabecalho cabecalho "
+    "img textos"
+    "rodape rodape";
+}
+
+header.cabecalho {
+  grid-area: cabecalho;
+  padding: 2rem;
+  margin-left: 3rem;
+}
+
+header.cabecalho .logo {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.cabecalho .logo img {
+  width: 20rem;
+}
+
+header.cabecalho .logo:hover {
+  opacity: 0.6;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.main .img {
+  grid-area: img;
+  width: 100%;
+  padding: 1rem;
+}
+
+.main .textos {
+  grid-area: textos;
+  align-items: center;
+  max-width: 47rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 5rem 1.5rem;
+}
+
+.main .textos .texto-principal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.main .textos .paragrafo {
+  font-size: 2rem;
+}
+
+.main .textos .btn {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  width: 16rem;
+  height: 4.5rem;
+  border-radius: 2rem;
+  color: hsl(257, 40%, 49%);
+  transition: 0.3s;
+}
+
+.main .btn:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.rodape {
+  grid-area: rodape;
+  display: flex;
+  justify-content: end;
+}
+
+.rodape .social {
+  margin-right: 4rem;
+}
+
+.rodape .social .item-social {
+  margin: 1rem;
+  color: #fff;
+  font-size: 4rem;
+  transition: 0.3s;
+}
+
+.rodape .social .item-social:hover {
+  color: hsl(300, 69%, 71%);
+}
+.rodape .social .item-social .item {
+  border: solid 0.1rem;
+  border-radius: 5rem;
+  padding: 0.5rem;
+}
